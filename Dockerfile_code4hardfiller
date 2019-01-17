@@ -1,11 +1,9 @@
 ################################################################# 
-# Dockerfile # # Software: vcf2maf # Software Version: 1.6.13 
-# Description: Convert a VCF into a MAF, where each variant is annotated  
-# to only one of all possible gene isoforms # Website: https://github.com/OpenGenomics/vcft2maf-tools 
-# Base Image: opengenomics/variant-effect-predictor-tool # Run Cmd: docker run opengenomics/vcf2maf perl vcf2maf.pl --man ################################################################# 
+# Dockerfile # # 
+# Description: Select a "PASS" VCF from mutect2 
 
 FROM ubuntu:16.04
-MAINTAINER chunlei <chunlei.yu1990@gmail.com>
+MAINTAINER chunlei <chunlei.yu1990@gmail.com><xiaoyulei0406@163.com>
 
 
 RUN apt-get -qq update && apt-get install -qqy \
