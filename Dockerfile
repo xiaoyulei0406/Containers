@@ -1,3 +1,4 @@
+FROM rocker/tidyverse:latest
 
 MAINTAINER Chunlei <chunleiyu@1990.gmail>
 
