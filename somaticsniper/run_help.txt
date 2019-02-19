@@ -1,0 +1,76 @@
+sudo docker run -t variantcall_tools:v1 FastQC/fastqc -h
+sudo docker run -t variantcall_tools:v1 bedtools
+sudo docker run -t variantcall_tools:v1 java -jar /picard-tools-1.140/picard.jar
+
+sudo docker run -t gatk4/wd:latest java -jar /gatk/gatk.jar GenomeAnalysisTK.jar \
+-T DepthOfCoverage
+
+
+job-bb32c408-ae65-477c-46f8-b081938c0246
+
+sudo docker run -t aws_tool:2.1.4 java -jar picard.jar
+
+
+ Job 1: 
+    ID: 2e95ba81-3b7c-47f1-7c88-de0c36e9a7ac
+    Name: NEW-RNA-workflow
+    Pipeline: RNA-WORKFLOW_EAGLETEST
+    Created: 2019-02-10T13:40:40+08:00
+    Finished: N/A
+    State: RUNNING
+    Owner: yingyun01
+    Priority: 0
+ 
+ Job 2: 
+    ID: cfa5566b-3055-4498-4602-0db45a2daa2e
+    Name: NEW-RNA-workflow
+    Pipeline: RNA-WORKFLOW_EAGLETEST
+    Created: 2019-02-10T13:15:57+08:00
+    Finished: N/A
+    State: RUNNING
+    Owner: yingyun01
+    Priority: 0
+ 
+ Job 3: 
+    ID: 9d09685a-0ab3-42fd-4f7a-1b7ee55c9dd3
+    Name: NEW-RNA-workflow
+    Pipeline: RNA-WORKFLOW_EAGLETEST
+    Created: 2019-02-10T13:40:47+08:00
+    Finished: N/A
+    State: RUNNING
+    Owner: yingyun01
+    Priority: 0
+  
+1 running jobs: 
+ Job 1: 
+    ID: aeda6f11-2985-47a6-5eb7-e789ad54b160
+    Name: NEW-RNA-workflow
+    Pipeline: RNA-WORKFLOW_EAGLETEST
+    Created: 2019-02-11T04:41:02+08:00
+    Finished: N/A
+    State: RUNNING
+    Owner: yingyun01
+    Priority: 0
+
+job-aeda6f11-2985-47a6-5eb7-e789ad54b160
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ str='vol2/xtvol@yingyun01:yingyun01/data/wes_pipeline_data/oscc/CGU_OSCC_01_N_1.fastq.gz'
+
+echo ${str%_*}
+###vol2/xtvol@yingyun01:yingyun01/data/wes_pipeline_data/oscc/CGU_OSCC_01_N
+echo
